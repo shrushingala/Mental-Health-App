@@ -1,0 +1,12 @@
+Flask==2.2.3                # Web framework for building the application
+numpy==1.24.2               # Numerical operations and handling pixel arrays
+pandas==1.5.3               # Data manipulation and preprocessing
+scikit-learn==1.2.2         # Machine learning models and preprocessing tools
+opencv-python==4.7.0.72     # Real-time facial detection and image processing
+matplotlib==3.7.1           # Generating visualizations like pie charts
+joblib==1.2.0               # Saving and loading machine learning models
+imblearn==0.0               # Handling imbalanced datasets (SMOTE)
+imbalanced-learn==0.10.1    # Oversampling techniques like SMOTE
+xgboost==1.7.5              # Advanced gradient boosting for model accuracy
+tensorflow==2.12.0          # Deep learning framework for CNN-LSTM (optional)
+keras==2.12.0               # High-level API for TensorFlow (optional)

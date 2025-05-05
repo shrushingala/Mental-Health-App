@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research Paper Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto 0 auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(44,62,80,0.06);
+      padding: 2.5rem 2rem 1.5rem 2rem;
+    }
+    h1 {
+      font-size: 2.4rem;
+      color: #283e4a;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .subtitle {
+      color: #6c7a89;
+      font-size: 1.15rem;
+      margin-bottom: 2.2rem;
+      text-align: center;
+    }
+    .filter-group {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    #yearFilter {
+      padding: 0.8rem;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      background: #f8f9fa;
+      font-size: 1rem;
+    }
+    .year-section {
+      margin-bottom: 35px;
+    }
+    .year-heading {
+      font-size: 1.3rem;
+      color: #2980b9;
+      font-weight: bold;
+      margin: 2.5rem 0 1.2rem 0;
+      letter-spacing: 0.5px;
+      border-left: 5px solid #2980b9;
+      padding-left: 12px;
+      background: #f0f7fb;
+      border-radius: 4px;
+    }
+    details.paper-details {
+      margin-bottom: 10px;
+      border: 1px solid #eaeaea;
+      border-radius: 6px;
+      background: #f8f9fa;
+      padding: 0.5rem 0.7rem;
+    }
+    summary.paper-summary-title {
+      cursor: pointer;
+      font-size: 1.08rem;
+      font-weight: 500;
+      color: #34495e;
+      outline: none;
+      user-select: none;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 1.2em;
+    }
+    summary.paper-summary-title:hover {
+      color: #2980b9;
+    }
+    .paper-link {
+      font-size: 0.97rem;
+      color: #3498db;
+      text-decoration: none;
+      background: #ecf6fb;
+      padding: 2px 8px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .paper-link:hover {
+      background: #d6eaf8;
+      color: #21618c;
+    }
+    details.summary-details {
+      margin-top: 0.7rem;
+      margin-left: 1.5rem;
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-radius: 6px;
+      padding: 0.5rem 1rem;
+    }
+    summary.summary-title {
+      cursor: pointer;
+      font-size: 1rem;
+      color: #34495e;
+      font-weight: 500;
+      outline: none;
+      user-select: none;
+      transition: color 0.2s;
+    }
+    details[open] > summary {
+      color: #2980b9;
+    }
+    ul.summary-points {
+      margin: 0.7rem 0 0 1.2rem;
+      color: #444;
+      font-size: 0.98rem;
+      padding-left: 1em;
+    }
+    ul.summary-points li {
+      margin-bottom: 0.3em;
+      line-height: 1.5;
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 2.5rem auto 0 auto;
+      background: #283e4a;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 2.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.2s;
+      text-align: center;
+    }
+    .back-btn:hover {
+      background: #3b566e;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1.2rem 0.3rem; }
+      .year-section { padding: 0.7rem 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Research Paper Analysis</h1>
+    <div class="subtitle">
+      We used this page to explore key research papers and their concise summaries. Click a paper to view its main points.
+    </div>
+    <div class="filter-group">
+      <select id="yearFilter" onchange="filterYears()">
+        <option value="">Select Year</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+      </select>
+    </div>
+
+    <!-- 2018 Research Papers Section -->
+    <div class="year-section" data-year="2018">
+        <div class="year-heading">2018 Papers Analysis</div>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            The Uncanny Valley Effect in Typically Developing Children and Its Absence in Children with Autism Spectrum Disorders
+            <a href="https://pubmed.ncbi.nlm.nih.gov/30383848/" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Summary of the Main Problem and Findings:This study explored how children react to computer-generated faces that look almost, but not quite, human-a phenomenon known as the "uncanny valley." The researchers discovered that typically developing children felt uneasy about these nearly human faces, but children with autism spectrum disorder (ASD) did not, likely because they process facial features differently.</li>
+              <li>Importance of This Paper for Facial Recognition in Mental Health: These findings are important for facial emotion recognition in mental health because they show that children with ASD perceive and respond to faces in unique ways, which should be considered when designing virtual characters or assessment tools for them.</li>
+              <li>Suggestion: When developing digital tools or therapies for children with ASD, it’s more important to make faces clear and easy to interpret rather than perfectly human-like, since the uncanny valley effect does not impact these children.</li>
+              <li>Key Image analysis: The eye sizes (ES) of a cartoon face and a human face were first enlarged from 100% to 125%, and then to 150%. Thus, we had three cartoon images and three human images with eye sizes of 100%, 125%, and 150%, respectively. The cartoon face with 150% eye size was gradually morphed into the human face with 150% eye size, the percentage of real human (RH) were 20%, 40%, 60% and 80%. This resulted in four morphed images, as shown on the right column of the figure.</li>
+              <a href="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f6af/6211702/995b9d5d7c2e/pone.0206343.g001.jpg" target="_blank">
+                <img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f6af/6211702/995b9d5d7c2e/pone.0206343.g001.jpg" alt="Figure from research paper" style="width:600px; vertical-align:middle; margin-left:10px;">
+              </a>
+            </ul>
+          </details>
+        </details>
+
+        <details class="paper-details">
+            <summary class="paper-summary-title">
+                Facial Emotion Decoding in Patients with Parkinson's Disease
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28796560/" target="_blank" class="paper-link">Original Paper</a>
+            </summary>
+            <details class="summary-details">
+              <summary class="summary-title">Research Analysis</summary>
+              <ul class="summary-points">
+                <li>Summary of the Main Problem and Findings: This study compared 30 patients with Parkinson’s disease (PD) to 30 healthy controls to investigate how well they could recognize facial emotions. Patients with PD made significantly more errors in identifying emotions, especially sadness (p < 0.001), anger (p = 0.01), and fear (p < 0.001), than healthy individuals. Importantly, these difficulties were not linked to the severity of depressive symptoms or cognitive decline, pointing to a specific problem with processing emotional information rather than general brain function. The study suggests that the emotional decoding deficit in PD is tied to changes in brain circuits affected by the disease, particularly those involved in dopamine signaling.</li>
+                <li>Importance of This Paper for Facial Recognition in Mental Health: This research highlights that facial emotion recognition tools must account for the specific challenges faced by people with Parkinson’s disease, especially their reduced ability to identify negative emotions. Understanding these deficits is crucial for developing better mental health assessments and support strategies tailored to the unique emotional processing changes in PD</li>
+                <li>Suggestion: Future digital mental health tools for Parkinson’s patients should focus on helping users recognize and interpret negative emotions, possibly using dynamic (video-based) expressions, and provide targeted support to address the emotional and social impacts of these recognition difficulties.</li>
+              </ul>
+            </details>
+          </details>
+      </div>
+
+    <!-- 2019 Research Papers Section -->
+    <div class="year-section" data-year="2019">
+        <div class="year-heading">2019 Papers Analysis</div>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            Facial Expression Recognition Based on Electroencephalogram and Facial Landmark Localization
+            <a href="https://pubmed.ncbi.nlm.nih.gov/30664515/" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Summary of the Main Problem and Key Findings: This paper addresses the challenge of improving the accuracy of facial expression recognition by combining brainwave data (EEG) with facial landmark analysis. The researchers developed a method that fuses features from EEG signals and facial landmarks, then uses a support vector machine (SVM) to classify emotions. Their approach increased recognition accuracy by 4.16% by fusion method (86.94 ± 4.35%) than EEG-based facial expression recognition (82.78 ± 5.78%), demonstrating stronger generalization and improved performance</li>
+              <li>Importance of This Paper for Facial Recognition in Mental Health: By integrating both brain activity and facial cues, this method offers a more reliable way to detect emotions, which is valuable for mental health assessment, diagnosis, and rehabilitation-especially in cases where facial expressions alone may not fully capture a person’s emotional state</li>
+              <li>Suggestion: Future tools for mental health evaluation could benefit from combining multiple data sources, like EEG and facial analysis, to enhance accuracy and provide a deeper understanding of emotional well-being.</li>  
+            </ul>
+          </details>
+        </details>
+
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            Effect of Wearable Digital Intervention for Improving Socialization in Children With Autism Spectrum Disorder: A Randomized Clinical Trial
+            <a href="https://pubmed.ncbi.nlm.nih.gov/30907929/" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Summary of the Main Problem and Key Findings: In this study, 71 children with autism spectrum disorder (ASD), ages 6 to 12, were split into two groups: 40 used the Superpower Glass wearable device at home in addition to their regular therapy, while 31 continued with standard therapy alone. The Superpower Glass uses Google Glass and a smartphone app to help children recognize facial expressions and receive real-time social cues. After 6 weeks, children using Superpower Glass improved their socialization skills by an average of 4.58 points on the Vineland Adaptive Behaviors Scale-an increase that matches or exceeds the threshold for meaningful clinical improvement and is comparable to gains seen with traditional therapy (P = .005). This is the first randomized clinical trial to show that a wearable digital tool can significantly boost social behavior in children with ASD.</li>
+              <li>Importance of This Paper for Facial Recognition in Mental Health: The results show that wearable technology using facial emotion recognition can directly enhance social skills in children with ASD, making it a promising, accessible way to support mental health and social development at home</li>
+              <li> Suggestion: Future digital therapies for ASD could further personalize support by using real-time facial recognition and feedback, making interventions more engaging and effective for children and their families outside of clinical settings.</li>
+              <li>Key Image analysis: The child wears smart glasses (A), which are wirelessly synced to an Android smartphone application (B), which runs the machine learning classifiers for face tracking and emotion detection, enables game choice, launches the games, and records the videos for later parent review. The outward facing camera of the glasses captures facial image data that are transmitted to the smartphone for immediate classification. A green box appears in the peripheral monitor of the glass units when a face is detected. In addition, an emoji corresponding to 1 of 8 emotions appears in the monitor when an emotion is detected. Both can appear at the same time, as demonstrated in C. The Superpower Glass intervention primarily consists of these 2 components, with the first encouraging facial awareness and the second teaching correct labeling of the emotion exhibited by the child’s social partner. The display allows colors and emoticons to be seen by the child within their peripheral field of view and does not require direct gaze. The form factor therefore rarely averts attention.</li>
+              <a href="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/0624/6503634/12690fafa2c6/jamapediatr-173-446-g001.jpg" target="_blank">
+                <img src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/0624/6503634/12690fafa2c6/jamapediatr-173-446-g001.jpg" alt="Figure from research paper" style="width:600px; vertical-align:middle; margin-left:10px;">
+              </a>
+            </ul>
+          </details>
+        </details>
+
+        <details class="paper-details">
+            <summary class="paper-summary-title">
+                Artificial Intelligence Based Facial Recognition for Mood Charting Among Men on Lifestyle Modification and Its Correlation with Cortisol
+              <a href="https://pubmed.ncbi.nlm.nih.gov/31121535/" target="_blank" class="paper-link">Original Paper</a>
+            </summary>
+            <details class="summary-details">
+              <summary class="summary-title">Research Analysis</summary>
+              <ul class="summary-points">
+                <li>Summary of the Main Problem and Key Findings: This study used artificial intelligence to track mood changes in men undergoing lifestyle modifications by analyzing facial expressions and comparing the results with salivary cortisol levels (a stress hormone) and psychologist assessments. Researchers trained a convolutional neural network on about 12,000 facial images across nine emotion categories, achieving a testing accuracy of 78.4%. The AI-based mood analysis closely matched scores from the Depression, Anxiety, and Stress Scale (DASS21), and changes in mood detected by the system showed a strong correlation with changes in cortisol levels, supporting its effectiveness as an early screening tool for mood disorders.</li>
+                <li>Importance of This Paper for Facial Recognition in Mental Health: This research is significant because it demonstrates that AI-based facial recognition, when validated against unbiased biological markers like salivary cortisol, can serve as an objective and early screening tool for mood disorders. The strong correlation between AI-detected mood states and cortisol levels means this technology could help clinicians detect and address mood changes before they escalate, making mental health monitoring more accurate and actionable</li>
+                <li> Suggestion: Suggestion: Future mental health tools could further improve accuracy and usefulness by integrating facial emotion recognition with biological data like cortisol, allowing for early intervention and more personalized support for individuals at risk of mood disorders.</li>
+                <a href="https://ars.els-cdn.com/content/image/1-s2.0-S187620181930190X-ga1.jpg" target="_blank">
+                  <img src="https://ars.els-cdn.com/content/image/1-s2.0-S187620181930190X-ga1.jpg" alt="Figure from research paper" style="width:600px; vertical-align:middle; margin-left:10px;">
+                </a>
+              </ul>
+            </details>
+          </details>
+
+          <details class="paper-details">
+            <summary class="paper-summary-title">
+                Artificial Intelligence Based Facial Recognition for Mood Charting Among Men on Lifestyle Modification and Its Correlation with Cortisol
+              <a href="https://pubmed.ncbi.nlm.nih.gov/31121535/" target="_blank" class="paper-link">Original Paper</a>
+            </summary>
+            <details class="summary-details">
+              <summary class="summary-title">Research Analysis</summary>
+              <ul class="summary-points">
+                <li>Summary of the Main Problem and Key Findings: This study used artificial intelligence to track mood changes in men undergoing lifestyle modifications by analyzing facial expressions and comparing the results with salivary cortisol levels (a stress hormone) and psychologist assessments. Researchers trained a convolutional neural network on about 12,000 facial images across nine emotion categories, achieving a testing accuracy of 78.4%. The AI-based mood analysis closely matched scores from the Depression, Anxiety, and Stress Scale (DASS21), and changes in mood detected by the system showed a strong correlation with changes in cortisol levels, supporting its effectiveness as an early screening tool for mood disorders.</li>
+                <li>Importance of This Paper for Facial Recognition in Mental Health: This research is significant because it demonstrates that AI-based facial recognition, when validated against unbiased biological markers like salivary cortisol, can serve as an objective and early screening tool for mood disorders. The strong correlation between AI-detected mood states and cortisol levels means this technology could help clinicians detect and address mood changes before they escalate, making mental health monitoring more accurate and actionable</li>
+                <li> Suggestion: Suggestion: Future mental health tools could further improve accuracy and usefulness by integrating facial emotion recognition with biological data like cortisol, allowing for early intervention and more personalized support for individuals at risk of mood disorders.</li>
+                <a href="https://ars.els-cdn.com/content/image/1-s2.0-S187620181930190X-ga1.jpg" target="_blank">
+                  <img src="https://ars.els-cdn.com/content/image/1-s2.0-S187620181930190X-ga1.jpg" alt="Figure from research paper" style="width:600px; vertical-align:middle; margin-left:10px;">
+                </a>
+              </ul>
+            </details>
+          </details>
+      </div>
+
+    <!-- 2020 Research Papers Section -->
+    <div class="year-section" data-year="2020">
+        <div class="year-heading">2020 Papers Analysis</div>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            Sensitivity and specificity of a facial emotion recognition test in classifying patients with schizophrenia
+            <a href="https://pubmed.ncbi.nlm.nih.gov/32734912/" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Summary of the Main Problem and Key Findings: This study aimed to determine how well a facial emotion recognition test could distinguish people with schizophrenia from healthy individuals by assessing their ability to recognize seven basic emotions: happiness, sadness, anger, fear, disgust, surprise, and neutral. Researchers found that patients with schizophrenia had significant difficulty correctly identifying several of these emotions. The test proved highly accurate: failing to recognize two or more emotion types identified schizophrenia with 96% sensitivity, while failing four or more types achieved 92% specificity for ruling out healthy individuals. This means the test can be adjusted to either catch more cases or reduce false positives, depending on clinical needs.</li>
+              <li>Importance of This Paper for Facial Recognition in Mental Health: The findings show that facial emotion recognition tests covering these seven basic emotions can be powerful tools for detecting schizophrenia, providing clinicians with an easy and objective way to spot emotional processing problems that are common in this disorder.</li>
+              <li>Suggestion: Mental health professionals could use similar facial emotion recognition tests in clinics to help diagnose schizophrenia earlier and track patients’ progress, adjusting the test’s thresholds to suit different diagnostic goals.</li>
+            </ul>
+          </details>
+        </details>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            AI in Psychological Diagnosis
+            <a href="https://example.com/paper2" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Machine learning models for depression detection</li>
+              <li>Ethical considerations in AI-based diagnosis</li>
+              <li>Comparative accuracy analysis with traditional methods</li>
+            </ul>
+          </details>
+        </details>
+
+        <details class="paper-details">
+            <summary class="paper-summary-title">
+              AI in Psychological Diagnosis
+              <a href="https://example.com/paper2" target="_blank" class="paper-link">Original Paper</a>
+            </summary>
+            <details class="summary-details">
+              <summary class="summary-title">Research Analysis</summary>
+              <ul class="summary-points">
+                <li>Machine learning models for depression detection</li>
+                <li>Ethical considerations in AI-based diagnosis</li>
+                <li>Comparative accuracy analysis with traditional methods</li>
+              </ul>
+            </details>
+          </details>
+      </div>
+
+    
+    <!-- 2021 Research Papers Section -->
+    <div class="year-section" data-year="2021">
+        <div class="year-heading">2021 Papers Analysis</div>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            Mental Health During Pandemics
+            <a href="https://example.com/paper1" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Long-term psychological impacts of quarantine measures</li>
+              <li>Analysis of coping mechanisms across different age groups</li>
+              <li>Comparative study of pre-and post-pandemic mental health statistics</li>
+            </ul>
+          </details>
+        </details>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            AI in Psychological Diagnosis
+            <a href="https://example.com/paper2" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Machine learning models for depression detection</li>
+              <li>Ethical considerations in AI-based diagnosis</li>
+              <li>Comparative accuracy analysis with traditional methods</li>
+            </ul>
+          </details>
+        </details>
+      </div>
+
+    <!-- 2022 Research Papers Section -->
+    <div class="year-section" data-year="2022">
+        <div class="year-heading">2022 Papers Analysis</div>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            Mental Health During Pandemics
+            <a href="https://example.com/paper1" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Long-term psychological impacts of quarantine measures</li>
+              <li>Analysis of coping mechanisms across different age groups</li>
+              <li>Comparative study of pre-and post-pandemic mental health statistics</li>
+            </ul>
+          </details>
+        </details>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            AI in Psychological Diagnosis
+            <a href="https://example.com/paper2" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Machine learning models for depression detection</li>
+              <li>Ethical considerations in AI-based diagnosis</li>
+              <li>Comparative accuracy analysis with traditional methods</li>
+            </ul>
+          </details>
+        </details>
+      </div>
+
+    <!-- 2023 Research Papers Section -->
+    <div class="year-section" data-year="2023">
+      <div class="year-heading">2023 Papers Analysis</div>
+      <details class="paper-details">
+        <summary class="paper-summary-title">
+          Mental Health During Pandemics
+          <a href="https://example.com/paper1" target="_blank" class="paper-link">Original Paper</a>
+        </summary>
+        <details class="summary-details">
+          <summary class="summary-title">Research Analysis</summary>
+          <ul class="summary-points">
+            <li>Long-term psychological impacts of quarantine measures</li>
+            <li>Analysis of coping mechanisms across different age groups</li>
+            <li>Comparative study of pre-and post-pandemic mental health statistics</li>
+          </ul>
+        </details>
+      </details>
+      <details class="paper-details">
+        <summary class="paper-summary-title">
+          AI in Psychological Diagnosis
+          <a href="https://example.com/paper2" target="_blank" class="paper-link">Original Paper</a>
+        </summary>
+        <details class="summary-details">
+          <summary class="summary-title">Research Analysis</summary>
+          <ul class="summary-points">
+            <li>Machine learning models for depression detection</li>
+            <li>Ethical considerations in AI-based diagnosis</li>
+            <li>Comparative accuracy analysis with traditional methods</li>
+          </ul>
+        </details>
+      </details>
+    </div>
+
+    <!-- 2024 Research Papers Section -->
+    <div class="year-section" data-year="2024">
+      <div class="year-heading">2024 Papers Analysis</div>
+      <details class="paper-details">
+        <summary class="paper-summary-title">
+          Neuroplasticity in Trauma Recovery
+          <a href="https://example.com/paper3" target="_blank" class="paper-link">Original Paper</a>
+        </summary>
+        <details class="summary-details">
+          <summary class="summary-title">Research Analysis</summary>
+          <ul class="summary-points">
+            <li>fMRI studies on brain pattern changes</li>
+            <li>Impact of CBT on neural pathways</li>
+            <li>Long-term follow-up studies (5-10 years)</li>
+          </ul>
+        </details>
+      </details>
+      <details class="paper-details">
+        <summary class="paper-summary-title">
+          Digital Therapeutics Efficacy
+          <a href="https://example.com/paper4" target="_blank" class="paper-link">Original Paper</a>
+        </summary>
+        <details class="summary-details">
+          <summary class="summary-title">Research Analysis</summary>
+          <ul class="summary-points">
+            <li>Mobile app interventions for anxiety management</li>
+            <li>User retention analysis across demographics</li>
+            <li>Comparison with traditional therapy outcomes</li>
+          </ul>
+        </details>
+      </details>
+    </div>
+
+    <!-- 2025 Research Papers Section -->
+    <div class="year-section" data-year="2025">
+        <div class="year-heading">2025 Papers Analysis</div>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            Neuroplasticity in Trauma Recovery
+            <a href="https://example.com/paper3" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>fMRI studies on brain pattern changes</li>
+              <li>Impact of CBT on neural pathways</li>
+              <li>Long-term follow-up studies (5-10 years)</li>
+            </ul>
+          </details>
+        </details>
+        <details class="paper-details">
+          <summary class="paper-summary-title">
+            Digital Therapeutics Efficacy
+            <a href="https://example.com/paper4" target="_blank" class="paper-link">Original Paper</a>
+          </summary>
+          <details class="summary-details">
+            <summary class="summary-title">Research Analysis</summary>
+            <ul class="summary-points">
+              <li>Mobile app interventions for anxiety management</li>
+              <li>User retention analysis across demographics</li>
+              <li>Comparison with traditional therapy outcomes</li>
+            </ul>
+          </details>
+        </details>
+      </div>
+
+    <a href="/" class="back-btn">Back to Home</a>
+  </div>
+  <script>
+    // Hide all year sections initially
+    document.querySelectorAll('.year-section').forEach(section => {
+      section.style.display = 'none';
+    });
+
+    function filterYears() {
+      const selectedYear = document.getElementById('yearFilter').value;
+      document.querySelectorAll('.year-section').forEach(section => {
+        if(selectedYear === '' || section.dataset.year === selectedYear) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

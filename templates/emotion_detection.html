@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Emotion Detection</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Real-Time Emotion Detection</h1>
+    <div>
+        <img src="/video_feed" alt="Video Stream">
+    </div>
+    <button onclick="startAnalysis()">Start Analysis</button>
+    <button onclick="stopAnalysis()">Stop Analysis</button>
+    <script>
+        function startAnalysis() {
+        fetch('/video_feed');
+    }
+
+    function stopAnalysis() {
+        fetch('/stop_analysis', { method: 'POST' })
+            .then(response => response.json())
+            .then(data => {
+                if (data.chart_path) {
+                    window.location.href = '/results';
+                } else {
+                    alert("No emotions were detected.");
+                }
+            });
+    }
+    </script>
+</body>
+</html>

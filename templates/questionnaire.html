@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mental Health Questionnaire</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Mental Health Questionnaire</h1>
+    <form action="/submit-questionnaire" method="post">
+        <!-- Age -->
+        <label for="age">Age Group:</label>
+        <select name="age" id="age" required>
+            <option value="16-20">16-20</option>
+            <option value="20-25">20-25</option>
+            <option value="25-30">25-30</option>
+            <option value="30-Above">30-Above</option>
+        </select><br>
+
+        <!-- Gender -->
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <!-- Occupation -->
+        <label for="occupation">Occupation:</label>
+        <select name="occupation" id="occupation" required>
+            <option value="Student">Student</option>
+            <option value="Corporate">Corporate</option>
+            <option value="Business">Business</option>
+            <option value="Housewife">Housewife</option>
+            <option value="Others">Others</option>
+        </select><br>
+
+        <!-- Days Indoors -->
+        <label for="days_indoors">How many days have you stayed indoors recently?</label>
+        <select name="days_indoors" id="days_indoors" required>
+            <option value="Go out Every day">Go out Every day</option>
+            <option value="1-14 days">1-14 days</option>
+            <option value="15-30 days">15-30 days</option>
+            <option value="31-60 days">31-60 days</option>
+            <option value="More than 2 months">More than 2 months</option>
+        </select><br>
+
+        <!-- Growing Stress -->
+        <label for="growing_stress">Have you been feeling increased stress recently?</label>
+        <select name="growing_stress" id="growing_stress" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select><br>
+
+        <!-- Quarantine Frustrations -->
+        <label for="quarantine_frustrations">Have you experienced frustrations during quarantine?</label>
+        <select name="quarantine_frustrations" id="quarantine_frustrations" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select><br>
+
+        <!-- Changes in Habits -->
+        <label for="changes_habits">Have you noticed changes in your habits?</label>
+        <select name="changes_habits" id="changes_habits" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+        </select><br>
+
+        <!-- Weight Change -->
+        <label for="weight_change">Have you experienced weight changes recently?</label>
+        <select name="weight_change" id="weight_change" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <!-- Mood Swings -->
+        <label for="mood_swings">Have you been experiencing mood swings?</label>
+        <select name="mood_swings" id="mood_swings" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select><br>
+
+        <!-- Coping Struggles -->
+        <label for="coping_struggles">Are you struggling with coping mechanisms?</label>
+        <select name="coping_struggles" id="coping_struggles" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <!-- Work Interest -->
+        <label for="work_interest">Have you lost interest in work or studies?</label>
+        <select name="work_interest" id="work_interest" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <!-- Social Weakness -->
+        <label for="social_weakness">Do you feel socially weak or isolated?</label>
+        <select name="social_weakness" id="social_weakness" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option> 
+            <!-- Optionally, add "Maybe" if needed -->
+       </select><br>
+
+       <!-- Submit Button -->
+       <button type='submit'>Submit Questionnaire!</button> 
+    </form>
+</body>
+</html>
+
